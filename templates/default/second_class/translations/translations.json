@@ -1,0 +1,11 @@
+{
+    "en": {
+      "welcome": "Welcome!",
+      "register_instruction": "Please register to access the internet."
+    },
+    "fr": {
+      "welcome": "Bienvenue!",
+      "register_instruction": "Veuillez vous enregistrer pour accéder à Internet."
+    }
+  }
+  

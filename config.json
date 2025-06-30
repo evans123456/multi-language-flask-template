@@ -1,0 +1,7 @@
+{
+    "theme": "default",
+    "default_class": "first_class",
+    "themes": ["autumn", "default"],
+    "classes": ["first_class", "second_class"]
+  }
+  

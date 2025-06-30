@@ -1,0 +1,37 @@
+{
+  "en": {
+    "landing_title": "Welcome to Our Wi-Fi",
+    "landing_heading": "Get Online",
+    "landing_description": "Please register to access the internet.",
+    "email_label": "Email Address",
+    "submit_button": "Connect",
+
+    "registered_title": "You're Online!",
+    "registered_heading": "Registration Successful",
+    "registered_success": "You are now connected to the internet.",
+    "logout_link": "Logout",
+
+    "logout_title": "You’ve Logged Out",
+    "logout_heading": "Goodbye!",
+    "logout_message": "You have successfully disconnected.",
+    "back_to_start": "Return to Start"
+  },
+
+  "fr": {
+    "landing_title": "Bienvenue sur notre Wi-Fi",
+    "landing_heading": "Se connecter",
+    "landing_description": "Veuillez vous inscrire pour accéder à Internet.",
+    "email_label": "Adresse e-mail",
+    "submit_button": "Se connecter",
+
+    "registered_title": "Vous êtes en ligne !",
+    "registered_heading": "Inscription réussie",
+    "registered_success": "Vous êtes maintenant connecté à Internet.",
+    "logout_link": "Se déconnecter",
+
+    "logout_title": "Vous vous êtes déconnecté",
+    "logout_heading": "Au revoir !",
+    "logout_message": "Vous vous êtes déconnecté avec succès.",
+    "back_to_start": "Retour à l'accueil"
+  }
+}

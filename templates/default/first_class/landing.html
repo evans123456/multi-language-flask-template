@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <title>{{ t["landing_title"] }}</title>
+</head>
+<body>
+    <h1>{{ t["landing_heading"] }}</h1>
+    <p>{{ t["landing_description"] }}</p>
+
+    <form action="/registered/{{ locale }}/" method="post">
+        <label>{{ t["email_label"] }}</label>
+        <input type="email" name="email" required>
+        <button type="submit">{{ t["submit_button"] }}</button>
+        
+{% comment %} <p>{{ api_data.message or t["landing_description"] }}</p> {% endcomment %}
+    </form>
+</body>
+</html>
