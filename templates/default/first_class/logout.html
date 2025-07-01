@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}">
 <head>
+    <meta charset="UTF-8">
     <title>{{ t["logout_title"] }}</title>
 </head>
 <body>
     <h1>{{ t["logout_heading"] }}</h1>
+
     <p>{{ t["logout_message"] }}</p>
-    <a href="/landing/{{ locale }}/">{{ t["back_to_start"] }}</a>
+
+    {% if api_data.message %}
+        <div>{{ api_data.message }}</div>
+    {% endif %}
+
+    <p>
+        <a href="/landing/{{ locale }}/">{{ t["back_to_start"] }}</a>
+    </p>
+    <p>
+        <a href="/landing/en/">EN</a> |
+        <a href="/landing/fr/">FR</a>
+    </p>
+    
 </body>
 </html>
