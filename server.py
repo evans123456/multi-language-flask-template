@@ -1,9 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 import json
 import os
 import requests
+import logging
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=None)
+
+
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 with open("config.json") as f:
     CONFIG = json.load(f)
@@ -25,6 +30,13 @@ def index():
     # Redirect to /landing with preferred locale
     locale = request.accept_languages.best_match(SUPPORTED_LOCALES) or "en"
     return redirect(url_for("landing", locale=locale))
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    logger.debug(f"Looking for: templates/{THEME}/static/{filename}")
+    return send_from_directory(f'templates/{THEME}/static', filename)
+
+
 
 @app.route("/landing/<locale>/")
 def landing(locale):
