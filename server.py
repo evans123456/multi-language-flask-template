@@ -54,7 +54,8 @@ def landing(locale):
         f"{THEME}/{CLASS}/landing.html",
         t=translations,
         locale=locale,
-        api_data=api_data
+        api_data=api_data,
+        page="landing"
     )
 
 @app.route("/registered/<locale>/")
@@ -73,7 +74,8 @@ def registered(locale):
         f"{THEME}/{CLASS}/registered.html",
         t=translations,
         locale=locale,
-        api_data=api_data
+        api_data=api_data,
+        page="registered"
     )
 
 @app.route("/logout/<locale>/")
@@ -92,7 +94,8 @@ def logout(locale):
         f"{THEME}/{CLASS}/logout.html",
         t=translations,
         locale=locale,
-        api_data=api_data
+        api_data=api_data,
+        page="logout"
     )
 
 if __name__ == "__main__":
